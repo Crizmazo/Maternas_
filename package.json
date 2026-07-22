@@ -1,0 +1,16 @@
+{
+  "name": "luz-estudio-fotografico",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "netlify dev",
+    "deploy": "netlify deploy",
+    "deploy:prod": "netlify deploy --prod"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.38.1"
+  }
+}

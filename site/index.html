@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fotografía materna y familiar en Medellín. Sesiones delicadas, memorias para siempre." />
+  <title>Luz Estudio — Fotografía materna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Inicio Luz Estudio"><span>LUZ</span><small>ESTUDIO FOTOGRÁFICO</small></a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i></button>
+    <nav class="nav" aria-label="Principal">
+      <a href="#galeria">Galería</a><a href="#servicios">Sesiones</a><a href="#productos">Productos</a><a href="#precios">Precios</a><a href="#contacto">Contacto</a>
+      <a class="nav-cta" href="#cita">Reservar cita</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy reveal"><p class="eyebrow">FOTOGRAFÍA MATERNA · MEDELLÍN</p><h1>La espera merece<br /><em>ser inolvidable.</em></h1><p class="hero-text">Retratos íntimos y luminosos para guardar la historia que empieza antes de nacer.</p><div class="hero-actions"><a class="button" href="#cita">Reserva tu experiencia <span>→</span></a><a class="text-link" href="#galeria">Ver galería</a></div></div>
+      <div class="hero-visual reveal"><div class="photo-frame hero-photo" data-cover="hero"><span>Tu fotografía principal</span></div><p class="hero-caption">Imágenes que se sienten como hogar.</p></div>
+    </section>
+
+    <section class="gallery section" id="galeria"><div class="section-heading reveal"><p class="eyebrow">PORTAFOLIO</p><h2>Momentos con alma</h2><p>Una mirada sensible a la maternidad, la familia y los nuevos comienzos.</p></div><div class="gallery-grid" id="galleryGrid"></div><p class="gallery-empty" id="galleryEmpty">Pronto compartiremos más historias. Vuelve a visitarnos.</p></section>
+
+    <section class="services section muted" id="servicios"><div class="section-heading centered reveal"><p class="eyebrow">EXPERIENCIAS</p><h2>Hecho para recordar</h2></div><div class="service-list reveal" id="serviceList"></div></section>
+
+    <section class="products section" id="productos"><div class="product-image reveal"><div class="photo-frame product-photo" data-cover="products"><span>Tu imagen de producto</span></div></div><div class="product-copy reveal"><p class="eyebrow">PIEZAS PARA ATESORAR</p><h2>Más que una foto,<br /><em>un recuerdo tangible.</em></h2><p>Impresiones y piezas pensadas para que estos momentos sigan viviendo en tu hogar.</p><div id="productList" class="product-list"></div></div></section>
+
+    <section class="pricing section" id="precios"><div class="section-heading reveal"><p class="eyebrow">SESIONES MATERNAS</p><h2>Encuentra tu experiencia</h2><p>Todos los paquetes incluyen los archivos digitales de las tomas elegidas según la sesión (1080×720 px).</p></div><div id="priceList" class="price-grid"></div><div class="price-notes reveal"><p><strong>Información importante</strong></p><ul><li>Las sesiones en exteriores se realizan en zona urbana de Medellín.</li><li>Contamos con vestidos, telas y accesorios para maternidad.</li><li>Servicio de maquillaje disponible: consulta disponibilidad y costo.</li><li>Persona adicional o mascota: $35.000.</li></ul></div></section>
+
+    <section class="booking section muted" id="cita"><div class="booking-intro reveal"><p class="eyebrow">AGENDA TU SESIÓN</p><h2>Conversemos sobre<br /><em>tu historia.</em></h2><p>Completa el formulario y te contactaremos para confirmar disponibilidad.</p></div><form class="booking-form reveal" id="bookingForm"><label>Nombre completo<input required name="name" autocomplete="name" /></label><label>WhatsApp<input required name="phone" inputmode="tel" autocomplete="tel" /></label><label>Correo electrónico<input required type="email" name="email" autocomplete="email" /></label><label>Sesión de interés<select name="service" id="bookingService"><option value="Sesión materna">Sesión materna</option></select></label><label>Fecha ideal<input type="date" name="preferredDate" /></label><label>Cuéntanos un poco<textarea name="message" rows="3" placeholder="¿Qué te gustaría celebrar?"></textarea></label><button class="button" type="submit">Solicitar cita <span>→</span></button><p class="form-status" id="formStatus" aria-live="polite"></p></form></section>
+  </main>
+  <footer id="contacto"><div><a class="brand footer-brand" href="#inicio"><span>LUZ</span><small>ESTUDIO FOTOGRÁFICO</small></a><p id="studioCity">Medellín, Colombia</p></div><div class="footer-contact"><p>¿Tienes preguntas?</p><a id="whatsappFooter" href="#">Escríbenos por WhatsApp ↗</a></div><p class="copyright">© <span id="year"></span> Luz Estudio. Todos los derechos reservados.</p></footer>
+  <a id="whatsappButton" class="whatsapp" href="#" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">⌕<span>WhatsApp</span></a>
+  <button class="admin-entry" id="adminEntry" aria-label="Acceso privado"></button>
+  <dialog id="adminDialog"><button class="dialog-close" data-close aria-label="Cerrar">×</button><section id="loginView"><p class="eyebrow">ÁREA PRIVADA</p><h2>Administración</h2><p>Ingresa con tu cuenta autorizada.</p><form id="loginForm"><label>Correo<input required type="email" name="email" /></label><label>Contraseña<input required type="password" name="password" /></label><button class="button">Ingresar <span>→</span></button><p class="form-status" id="loginStatus"></p></form></section><section id="dashboardView" hidden><div class="dashboard-head"><div><p class="eyebrow">PANEL PRIVADO</p><h2>Contenido del sitio</h2></div><button class="text-button" id="signOut">Cerrar sesión</button></div><div class="dashboard-tabs"><button data-tab="photos" class="active">Fotografías</button><button data-tab="catalog">Catálogo</button><button data-tab="appointments">Citas</button><button data-tab="settings">Contacto</button></div><div id="dashboardContent"></div></section></dialog>
+  <script src="config.js"></script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="app.js" type="module"></script>
+</body></html>
